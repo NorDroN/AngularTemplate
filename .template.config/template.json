@@ -1,0 +1,12 @@
+{
+    "author": "NorDroN",
+    "classifications": [ "Web" ],
+    "name": "Angular Template",
+    "identity": "NorDroN.AngularTemplate",  // Unique name for this template
+    "shortName": "nordron-angular",         // Short name that can be used on the cli
+    "tags": {
+        "language": "C#"                    // Specify that this template is in C#.
+    },
+    "sourceName": "AngularTemplate",        // Will replace the string 'AngularTemplate' with the value provided via -n.
+    "preferNameDirectory" : "true"
+}

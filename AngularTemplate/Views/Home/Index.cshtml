@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+        
+@* problem with HttpClientXsrfModule in angular 4.3.6, see https://github.com/aspnet/Templates/issues/866 *@
+@*<app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>*@
+
+<app>Loading...</app>
+
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+@section scripts {
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+}
