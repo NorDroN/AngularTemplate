@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NorDroN.AngularTemplate</id>
+    <version>0.1.5</version>
+    <title>Angular Template for dotnet-new</title>
+    <authors>NorDroN</authors>
+    <owners>NorDroN</owners>
+    <projectUrl>https://github.com/NorDroN/AngularTemplate</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A template for .Net Core and Angular</description>
+    <summary>A template for .Net Core and Angular</summary>
+    <releaseNotes>Created the project</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>.Net Core Angular Template</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>
