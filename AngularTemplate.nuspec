@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>NorDroN.AngularTemplate</id>
-    <version>0.1.5</version>
+    <version>0.1.6</version>
     <title>Angular Template for dotnet-new</title>
     <authors>NorDroN</authors>
     <owners>NorDroN</owners>
     <projectUrl>https://github.com/NorDroN/AngularTemplate</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A template for .Net Core and Angular</description>
+    <description>A dotnet-new template based on the Javascript Services angular template and OpenIddict</description>
     <summary>A template for .Net Core and Angular</summary>
     <releaseNotes>Created the project</releaseNotes>
     <copyright>Copyright 2017</copyright>
