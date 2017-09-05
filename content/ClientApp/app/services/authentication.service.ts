@@ -46,17 +46,15 @@ export class AuthenticationService {
         let headers = new HttpHeaders()
             .set("Content-Type", "application/x-www-form-urlencoded");
 
-        let searchParams = new URLSearchParams();
-        searchParams.append('username', username);
-        searchParams.append('password', password);
-        searchParams.append('grant_type', 'password');
-        searchParams.append('scope', 'openid email profile roles');
-        searchParams.append('resource', window.location.origin);
-
-        let requestBody = searchParams.toString();
+        let params = new HttpParams()
+            .set('username', username)
+            .set('password', password)
+            .set('grant_type', 'password')
+            .set('scope', 'openid email profile roles')
+            .set('resource', window.location.origin);
 
         return this.http
-            .post(this.loginUrl, requestBody, { headers: headers })
+            .post(this.loginUrl, params, { headers: headers })
             .map(response => this.processLoginResponse(response, rememberMe));
     }
 
@@ -86,7 +84,6 @@ export class AuthenticationService {
         let jwtHelper = new JwtHelper();
         let decodedIdToken = jwtHelper.decodeToken(response_token.id_token);
 
-        debugger;
         //let permissions: PermissionValues[] = Array.isArray(decodedIdToken.permission) ? decodedIdToken.permission : [decodedIdToken.permission];
 
         let user: User = {

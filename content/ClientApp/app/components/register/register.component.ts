@@ -8,6 +8,7 @@ import { AlertService, AuthenticationService } from '../../services/index';
     templateUrl: './register.component.html'
 })
 export class RegisterComponent {
+
     model: any = {};
     loading = false;
 
@@ -31,4 +32,5 @@ export class RegisterComponent {
                     this.loading = false;
                 });
     }
+
 }

@@ -17,6 +17,7 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 
@@ -35,7 +36,8 @@ import { CounterComponent } from './components/counter/counter.component';
         FetchDataComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        ProfileComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
